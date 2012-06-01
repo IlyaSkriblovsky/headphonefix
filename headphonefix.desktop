@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Headphone Fix
+Exec=/bin/sh /opt/headphonefix/switch.sh

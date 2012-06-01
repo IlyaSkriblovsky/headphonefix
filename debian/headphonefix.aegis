@@ -1,0 +1,8 @@
+<aegis>
+    <request>
+        <credential name="UID::root"/>
+        <credential name="GID::root"/>
+        <credential name="GRP::root"/>
+        <for path="/opt/headphonefix/switcher"/>
+    </request>
+</aegis>

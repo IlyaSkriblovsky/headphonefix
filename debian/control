@@ -1,0 +1,11 @@
+Source: headphonefix
+Section: user/network
+Priority: extra
+Maintainer: Ilya Skriblovsky <Ilya.Skriblovsky@gmail.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.4
+
+Package: headphonefix
+Architecture: any
+Description: Fix for not working headphone jack switch
+Version: 0.0.1
