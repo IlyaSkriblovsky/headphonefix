@@ -7,3 +7,7 @@ LIBS += -lmdeclarativecache
 
 HEADERS =
 SOURCES = main.cpp
+
+
+target.path = /opt/headphonefix/
+INSTALLS += target

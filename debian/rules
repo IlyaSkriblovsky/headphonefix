@@ -8,14 +8,16 @@ clean:
 	dh_testdir
 	dh_testroot
 	dh_clean
-	make clean
+	rm -rf build
 
 install: build
 	dh_testdir
 	dh_testroot
 	dh_clean -k
 	dh_installdirs
-	$(MAKE) INSTALL_ROOT=$(CURDIR)/debian/$(APPNAME) install
+	mkdir -p build
+	cd build && qmake PREFIX=/usr ../$(APPNAME).pro BUILDDIR=build
+	$(MAKE) -C build INSTALL_ROOT=$(CURDIR)/debian/$(APPNAME) install
 
 build-indep: build install
 
