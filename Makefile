@@ -10,6 +10,9 @@ install: switcher
 	mkdir -p $(INSTALL_ROOT)/usr/share/applications/
 	install -pm 644 headphonefix.desktop $(INSTALL_ROOT)/usr/share/applications/
 
+	mkdir -p $(INSTALL_ROOT)/usr/share/icons/hicolor/64x64/apps
+	install -pm 644 headphonefix.png $(INSTALL_ROOT)/usr/share/icons/hicolor/64x64/apps
+
 clean:
 	rm -f switcher
 
