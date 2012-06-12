@@ -10,7 +10,7 @@
 
 
 int usage() {
-    fprintf(stderr, "Usage: switcher speaker|headphone\n");
+    fprintf(stderr, "Usage: switcher speaker|headphone|headset|videoout\n");
     return 1;
 }
 

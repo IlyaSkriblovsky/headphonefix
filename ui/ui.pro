@@ -2,12 +2,13 @@ TEMPLATE = app
 
 QT = core gui declarative
 CONFIG += qdeclarative-boostable
-INCLUDEPATH += /usr/include/applauncherd
-LIBS += -lmdeclarativecache
 
-HEADERS =
-SOURCES = main.cpp
-
+HEADERS = process.h
+SOURCES = main.cpp process.cpp
 
 target.path = /opt/headphonefix/
 INSTALLS += target
+
+qml.files = *.qml
+qml.path = /opt/headphonefix/qml/
+INSTALLS += qml
